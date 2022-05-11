@@ -1,0 +1,27 @@
+<header>
+    <div class="navbar navbar-dark shadow-sm bg-custom-2">
+        <div class="navbar-brand align-item-center d-flex">
+            <div class="h">
+                 <i style="font-size: 40px; margin: 0 10px 10px;" class="fa fa-ticket">&nbsp;
+                </i> 
+                <strong>Ticketing App Angular</strong>
+            </div>
+        </div>
+        
+        <div *ngIf="this.AuthService.isloggedin === false; else issignedin"  >
+            <button routerLink="signin" class="btn btn-signIn">Login</button>
+            <button routerLink="signup" class="btn btn-signUp" style="margin: 0 10px;">Sign Up</button>
+        </div>
+
+        <ng-template #issignedin>
+            <div class="align-item-center d-flex">
+                <span>{{AuthService.user.name}}</span>           
+             
+                <button class="btn btnsignOut" (click)="onLogoutClick()">Log Out</button>
+            </div>
+        </ng-template>
+        
+    </div>
+</header>
+
+<router-outlet></router-outlet>

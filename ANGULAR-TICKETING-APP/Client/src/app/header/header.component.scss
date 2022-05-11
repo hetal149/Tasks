@@ -1,0 +1,62 @@
+.bg-custom-2{
+    background-color: #07244f;
+    
+}
+
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+
+.navbar {
+    background-color: #07244f;
+}
+
+strong {
+
+    font-size: 30px;
+}
+.btnsignOut{
+    background-color: red;
+}
+
+
+span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+.btn {
+    margin-right: 15px;
+    color: #fff;
+
+    &-signIn {
+        background-color: #ffffff;
+       color:black
+    }
+
+    &-signUp {
+        background-color: #ffffff;
+        color:black;
+      
+    }
+
+    &-cart {
+        background-color: #222831;
+
+        .badge {
+            background-color: #00ADB5;
+        }
+    }
+
+    &-signOut {
+        background-color: #00ADB5;
+    }
+}
+
